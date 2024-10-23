@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(107, 155, 246); /* Background color */
+    background-image: url('image.png'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    font-family: Arial, sans-serif;
+}
+
+/* Search Section */
+
+.search-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #8a006d; /* Purple background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    width: 80px; /* Small width initially */
+    cursor: pointer;
+    transition: width 0.3s ease, transform 0.3s ease; /* Smooth width and transform transitions */
+}
+.search-select:hover,
+.search-select:focus,
+.search-select:active {
+    width: 200px; /* Expand on hover and keep it expanded after selecting */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Prevent shrinking after selection */
+.search-select:focus {
+    width: 200px; /* Ensure it stays expanded when focused */
+}
+
+
+/* Search Bar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 100%;
+    animation: fadeIn 1.2s ease-in-out; /* Animation for navbar */
+}
+
+.search-select {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #8a006d; /* Purple background */
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: width 0.3s ease, transform 0.3s ease;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    color: #8a006d;
+}
+
+.search-btn {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.search-btn i {
+    color: #8a006d;
+    font-size: 1.2rem;
+}
+
+/* Quick Links Styling */
+.quick-links {
+    display: flex;
+    justify-content: space-around; /* Evenly space the links */
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+    color: #005bb5;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        width: 90%; /* Adjust the navbar for smaller screens */
+    }
+
+    .quick-links {
+        width: 90%; /* Adjust the quick links container for smaller screens */
+    }
+}

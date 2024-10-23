@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="web.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <div class="search-section">
+        <div class="navbar">
+            
+        
+                <select class="search-select ">
+            
+                    <option value="Everything">Everything</option>
+                    <option value="Software Development">Software Development</option>
+                   <option value="Web Development">Web Development</option>
+                    <option value="Data Analyst">Data Analyst</option>                
+                    <option value="IT Consultant">IT Consultant</option>
+                    <option value="Network Administrator">Network Administrator</option>
+            
+                </select>
+            
+            <input placeholder="Search Anything" class="search-input">
+            
+            <button class="clear-btn" aria-label="Clear Search">x</button>
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        
+        <div class="quick-links">
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+    <!-- for changing in placeholder input based on options we need to use js 
+ without it we cant change it dynamically so here i am using js for few line in index.html and not creating js file seperately-->
+    <script src="webjs.js"></script>
+</body>
+
+</html>
