@@ -19,7 +19,7 @@ This project is a simple search interface created using HTML, CSS, and JavaScrip
 2. Open `index.html` in a web browser.
 
 ## Demo
-![Demo](screenshot.png) <!-- Add a screenshot if available -->
+![Demo](website.png) <!-- Add a screenshot if available -->
 
 ## License
 This project is licensed under the MIT License.
